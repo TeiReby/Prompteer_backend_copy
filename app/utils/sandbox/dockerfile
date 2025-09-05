@@ -1,0 +1,6 @@
+# 1. 기본이 될 이미지를 선택합니다.
+FROM python:3.10-slim
+
+# 2. apt-get 패키지 관리자를 업데이트하고, 'time' 패키지를 설치합니다.
+#    -y 옵션은 설치 중 묻는 질문에 자동으로 yes로 답해줍니다.
+RUN apt-get update && apt-get install -y time
